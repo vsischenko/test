@@ -1,0 +1,605 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="root" prefHeight="1000.0" prefWidth="700.0" spacing="20.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.test.test.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <ToolBar prefHeight="40.0" prefWidth="200.0">
+     <items>
+       <Button fx:id="openButton" mnemonicParsing="false" onAction="#onOpenButtonClick" text="Open" />
+     </items>
+   </ToolBar>
+   <GridPane>
+     <columnConstraints>
+       <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+       <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+     </columnConstraints>
+     <rowConstraints>
+       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+     </rowConstraints>
+      <children>
+         <Label fx:id="fearLabel" text="1. Страх неудачи" />
+         <Label fx:id="guiltyLabel" text="2. Вина" GridPane.rowIndex="1" />
+         <Label fx:id="shameLabel" text="3. Стыд" GridPane.rowIndex="2" />
+         <Label fx:id="resentmentLabel" text="4. Обида" GridPane.rowIndex="3" />
+         <Label text="Соотношение всех мыслей к саногенным" GridPane.columnIndex="1" />
+         <Label fx:id="fearRes" text="Результат страх" GridPane.columnIndex="2" />
+         <Label fx:id="guiltyRes" text="Результат вина" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+         <Label fx:id="shameRes" text="Результат стыд" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+         <Label fx:id="resentmentRes" text="Результат обида" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+      </children>
+   </GridPane>
+   <GridPane gridLinesVisible="true" VBox.vgrow="ALWAYS">
+     <columnConstraints>
+         <ColumnConstraints fillWidth="false" hgrow="SOMETIMES" prefWidth="10.0" />
+         <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" minWidth="200.0" prefWidth="200.0" />
+         <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="20.0" prefWidth="70.0" />
+         <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="20.0" prefWidth="70.0" />
+         <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="20.0" prefWidth="70.0" />
+       <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="20.0" prefWidth="100.0" />
+       <ColumnConstraints fillWidth="false" halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="50.0" />
+     </columnConstraints>
+     <rowConstraints>
+         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         <RowConstraints fillHeight="false" percentHeight="0.0" valignment="CENTER" vgrow="ALWAYS" />
+         <RowConstraints vgrow="SOMETIMES" />
+         <RowConstraints vgrow="SOMETIMES" />
+         <RowConstraints vgrow="SOMETIMES" />
+         <RowConstraints vgrow="SOMETIMES" />
+         <RowConstraints vgrow="SOMETIMES" />
+         <RowConstraints vgrow="SOMETIMES" />
+         <RowConstraints vgrow="SOMETIMES" />
+         <RowConstraints vgrow="SOMETIMES" />
+         <RowConstraints fillHeight="false" percentHeight="0.0" valignment="CENTER" vgrow="ALWAYS" />
+         <RowConstraints vgrow="SOMETIMES" />
+         <RowConstraints vgrow="SOMETIMES" />
+         <RowConstraints vgrow="SOMETIMES" />
+         <RowConstraints vgrow="SOMETIMES" />
+         <RowConstraints vgrow="SOMETIMES" />
+         <RowConstraints vgrow="SOMETIMES" />
+     </rowConstraints>
+      <children>
+         <Label text="5." GridPane.rowIndex="1" />
+         <Label text="6." GridPane.rowIndex="2" />
+         <Label text="7." GridPane.rowIndex="3" />
+         <Label text="8." GridPane.rowIndex="4" />
+         <Label text="9." GridPane.rowIndex="5" />
+         <Label text="10." GridPane.rowIndex="6" />
+         <Label text="11." GridPane.rowIndex="7" />
+         <Label text="12." GridPane.rowIndex="8" />
+         <Label text="13." GridPane.rowIndex="9" />
+         <Label text="14." GridPane.rowIndex="10" />
+         <Label text="15." GridPane.rowIndex="11" />
+         <Label text="16." GridPane.rowIndex="12" />
+         <Label text="17." GridPane.rowIndex="13" />
+         <Label text="18." GridPane.rowIndex="14" />
+         <Label text="19." GridPane.rowIndex="15" />
+         <Label text="20." GridPane.rowIndex="16" />
+         <Label text="Страх неудачи" textAlignment="CENTER" GridPane.columnIndex="2">
+            <font>
+               <Font size="18.0" />
+            </font>
+         </Label>
+         <Label text="Вина" GridPane.columnIndex="3">
+            <font>
+               <Font size="18.0" />
+            </font>
+         </Label>
+         <Label text="Стыд" GridPane.columnIndex="4">
+            <font>
+               <Font size="18.0" />
+            </font>
+         </Label>
+         <Label text="Обида" GridPane.columnIndex="5">
+            <font>
+               <Font size="18.0" />
+            </font>
+         </Label>
+         <Label text="Агрессия против других" GridPane.columnIndex="1" GridPane.rowIndex="1">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Label>
+         <Label text="Агрессия против себя" GridPane.columnIndex="1" GridPane.rowIndex="2">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Label>
+         <Label text="Рационализация обесцениванием объекта" GridPane.columnIndex="1" GridPane.rowIndex="3">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Label>
+         <Label text="Рационализация обстоятельствами" GridPane.columnIndex="1" GridPane.rowIndex="4">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Label>
+         <Label text="Проекция на других" GridPane.columnIndex="1" GridPane.rowIndex="5">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Label>
+         <Label text="Защита от чувства вины" GridPane.columnIndex="1" GridPane.rowIndex="6">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Label>
+         <Label text="Защита от чувства стыда" GridPane.columnIndex="1" GridPane.rowIndex="7">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Label>
+         <Label text="Защита от страха неудачи" GridPane.columnIndex="1" GridPane.rowIndex="8">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Label>
+         <Label text="Защита от зависти" GridPane.columnIndex="1" GridPane.rowIndex="9">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Label>
+         <Label text="Защита от обиды" GridPane.columnIndex="1" GridPane.rowIndex="10">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Label>
+         <Label text="Уход из ситуации" GridPane.columnIndex="1" GridPane.rowIndex="11">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Label>
+         <Label text="Самоуничижение Я" GridPane.columnIndex="1" GridPane.rowIndex="12">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Label>
+         <Label text="Возбуждение вины в других" GridPane.columnIndex="1" GridPane.rowIndex="13">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Label>
+         <Label text="Саногенное, реалист. мышление" GridPane.columnIndex="1" GridPane.rowIndex="14">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Label>
+         <Label text="Несоответствие других ожиданиям" GridPane.columnIndex="1" GridPane.rowIndex="15">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Label>
+         <Label text="Аппелирующее мышление" GridPane.columnIndex="1" GridPane.rowIndex="16">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Label>
+         <Label fx:id="l51" text="l51" GridPane.columnIndex="2" GridPane.rowIndex="1">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Label>
+         <Label fx:id="l52" text="l52" wrapText="true" GridPane.columnIndex="3" GridPane.rowIndex="1">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Label>
+         <Label fx:id="l53" text="l53" wrapText="true" GridPane.columnIndex="4" GridPane.rowIndex="1">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Label>
+         <Label fx:id="l54" accessibleRole="TEXT_AREA" text="l54" wrapText="true" GridPane.columnIndex="5" GridPane.rowIndex="1" GridPane.vgrow="ALWAYS">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Label>
+         <Label fx:id="l61" text="l61" wrapText="true" GridPane.columnIndex="2" GridPane.rowIndex="2">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Label>
+         <Label fx:id="l62" text="l62" wrapText="true" GridPane.columnIndex="3" GridPane.rowIndex="2">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Label>
+         <Label fx:id="l63" text="l63" wrapText="true" GridPane.columnIndex="4" GridPane.rowIndex="2">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Label>
+         <Label fx:id="l64" text="l64" wrapText="true" GridPane.columnIndex="5" GridPane.rowIndex="2">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Label>
+         <Label fx:id="l71" text="l71" wrapText="true" GridPane.columnIndex="2" GridPane.rowIndex="3">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Label>
+         <Label fx:id="l72" text="l72" wrapText="true" GridPane.columnIndex="3" GridPane.rowIndex="3">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Label>
+         <Label fx:id="l73" text="l73" wrapText="true" GridPane.columnIndex="4" GridPane.rowIndex="3">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Label>
+         <Label fx:id="l74" text="l74" wrapText="true" GridPane.columnIndex="5" GridPane.rowIndex="3">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Label>
+         <Label fx:id="l81" text="l81" wrapText="true" GridPane.columnIndex="2" GridPane.rowIndex="4">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Label>
+         <Label fx:id="l82" text="l82" wrapText="true" GridPane.columnIndex="3" GridPane.rowIndex="4">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Label>
+         <Label fx:id="l83" text="l83" wrapText="true" GridPane.columnIndex="4" GridPane.rowIndex="4">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Label>
+         <Label fx:id="l84" text="l84" wrapText="true" GridPane.columnIndex="5" GridPane.rowIndex="4">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Label>
+         <Label fx:id="l91" text="l91" wrapText="true" GridPane.columnIndex="2" GridPane.rowIndex="5">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Label>
+         <Label fx:id="l92" text="l92" wrapText="true" GridPane.columnIndex="3" GridPane.rowIndex="5">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Label>
+         <Label fx:id="l93" text="l93" wrapText="true" GridPane.columnIndex="4" GridPane.rowIndex="5">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Label>
+         <Label fx:id="l94" text="l94" wrapText="true" GridPane.columnIndex="5" GridPane.rowIndex="5">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Label>
+         <Label fx:id="l101" text="l101" wrapText="true" GridPane.columnIndex="2" GridPane.rowIndex="6">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Label>
+         <Label fx:id="l102" text="l102" wrapText="true" GridPane.columnIndex="3" GridPane.rowIndex="6">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Label>
+         <Label fx:id="l103" text="l103" wrapText="true" GridPane.columnIndex="4" GridPane.rowIndex="6">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Label>
+         <Label fx:id="l104" text="l104" wrapText="true" GridPane.columnIndex="5" GridPane.rowIndex="6">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Label>
+         <Label fx:id="l111" text="l111" wrapText="true" GridPane.columnIndex="2" GridPane.rowIndex="7">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Label>
+         <Label fx:id="l112" text="l112" wrapText="true" GridPane.columnIndex="3" GridPane.rowIndex="7">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Label>
+         <Label fx:id="l113" accessibleRole="TEXT_AREA" text="l113" wrapText="true" GridPane.columnIndex="4" GridPane.rowIndex="7">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Label>
+         <Label fx:id="l114" text="l114" wrapText="true" GridPane.columnIndex="5" GridPane.rowIndex="7">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Label>
+         <Label fx:id="l121" text="l121" wrapText="true" GridPane.columnIndex="2" GridPane.rowIndex="8">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Label>
+         <Label fx:id="l122" text="l122" wrapText="true" GridPane.columnIndex="3" GridPane.rowIndex="8">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Label>
+         <Label fx:id="l123" text="l123" wrapText="true" GridPane.columnIndex="4" GridPane.rowIndex="8">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Label>
+         <Label fx:id="l124" text="l124" wrapText="true" GridPane.columnIndex="5" GridPane.rowIndex="8">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Label>
+         <Label fx:id="l131" text="l131" wrapText="true" GridPane.columnIndex="2" GridPane.rowIndex="9">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Label>
+         <Label fx:id="l132" text="l132" wrapText="true" GridPane.columnIndex="3" GridPane.rowIndex="9">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Label>
+         <Label fx:id="l133" text="l133" wrapText="true" GridPane.columnIndex="4" GridPane.rowIndex="9">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Label>
+         <Label fx:id="l134" text="l134" wrapText="true" GridPane.columnIndex="5" GridPane.rowIndex="9">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Label>
+         <Label fx:id="l141" text="l141" wrapText="true" GridPane.columnIndex="2" GridPane.rowIndex="10">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Label>
+         <Label fx:id="l142" text="l142" wrapText="true" GridPane.columnIndex="3" GridPane.rowIndex="10">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Label>
+         <Label fx:id="l143" text="l143" wrapText="true" GridPane.columnIndex="4" GridPane.rowIndex="10">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Label>
+         <Label fx:id="l144" accessibleRole="TEXT_AREA" text="l144" wrapText="true" GridPane.columnIndex="5" GridPane.rowIndex="10" GridPane.vgrow="ALWAYS">
+            <font>
+               <Font size="14.0" />
+            </font>
+            <effect>
+               <Bloom />
+            </effect>
+         </Label>
+         <Label fx:id="l151" text="l151" wrapText="true" GridPane.columnIndex="2" GridPane.rowIndex="11">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Label>
+         <Label fx:id="l152" text="l152" wrapText="true" GridPane.columnIndex="3" GridPane.rowIndex="11">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Label>
+         <Label fx:id="l153" text="l153" wrapText="true" GridPane.columnIndex="4" GridPane.rowIndex="11">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Label>
+         <Label fx:id="l154" text="l154" wrapText="true" GridPane.columnIndex="5" GridPane.rowIndex="11">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Label>
+         <Label fx:id="l161" text="l161" wrapText="true" GridPane.columnIndex="2" GridPane.rowIndex="12">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Label>
+         <Label fx:id="l162" text="l162" wrapText="true" GridPane.columnIndex="3" GridPane.rowIndex="12">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Label>
+         <Label fx:id="l163" text="l163" wrapText="true" GridPane.columnIndex="4" GridPane.rowIndex="12">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Label>
+         <Label fx:id="l164" text="l164" wrapText="true" GridPane.columnIndex="5" GridPane.rowIndex="12">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Label>
+         <Label fx:id="l171" text="l171" wrapText="true" GridPane.columnIndex="2" GridPane.rowIndex="13">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Label>
+         <Label fx:id="l172" text="l172" wrapText="true" GridPane.columnIndex="3" GridPane.rowIndex="13">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Label>
+         <Label fx:id="l173" text="l173" wrapText="true" GridPane.columnIndex="4" GridPane.rowIndex="13">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Label>
+         <Label fx:id="l174" text="l174" wrapText="true" GridPane.columnIndex="5" GridPane.rowIndex="13">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Label>
+         <Label fx:id="l181" text="l181" wrapText="true" GridPane.columnIndex="2" GridPane.rowIndex="14">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Label>
+         <Label fx:id="l182" text="l182" wrapText="true" GridPane.columnIndex="3" GridPane.rowIndex="14">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Label>
+         <Label fx:id="l183" text="l183" wrapText="true" GridPane.columnIndex="4" GridPane.rowIndex="14">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Label>
+         <Label fx:id="l184" text="l184" wrapText="true" GridPane.columnIndex="5" GridPane.rowIndex="14">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Label>
+         <Label fx:id="l191" text="l191" wrapText="true" GridPane.columnIndex="2" GridPane.rowIndex="15">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Label>
+         <Label fx:id="l192" text="l192" wrapText="true" GridPane.columnIndex="3" GridPane.rowIndex="15">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Label>
+         <Label fx:id="l193" text="l193" wrapText="true" GridPane.columnIndex="4" GridPane.rowIndex="15">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Label>
+         <Label fx:id="l194" text="l194" wrapText="true" GridPane.columnIndex="5" GridPane.rowIndex="15">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Label>
+         <Label fx:id="l201" text="l201" wrapText="true" GridPane.columnIndex="2" GridPane.rowIndex="16">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Label>
+         <Label fx:id="l202" text="l202" wrapText="true" GridPane.columnIndex="3" GridPane.rowIndex="16">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Label>
+         <Label fx:id="l203" text="l203" wrapText="true" GridPane.columnIndex="4" GridPane.rowIndex="16">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Label>
+         <Label fx:id="l204" text="l204" wrapText="true" GridPane.columnIndex="5" GridPane.rowIndex="16">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Label>
+         <Label fx:id="sum5" text="Sum5" wrapText="true" GridPane.columnIndex="6" GridPane.rowIndex="1">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Label>
+         <Label fx:id="sum6" text="Sum6" wrapText="true" GridPane.columnIndex="6" GridPane.rowIndex="2">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Label>
+         <Label fx:id="sum7" text="Sum7" wrapText="true" GridPane.columnIndex="6" GridPane.rowIndex="3">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Label>
+         <Label fx:id="sum8" text="Sum8" wrapText="true" GridPane.columnIndex="6" GridPane.rowIndex="4">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Label>
+         <Label fx:id="sum9" text="Sum9" wrapText="true" GridPane.columnIndex="6" GridPane.rowIndex="5">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Label>
+         <Label fx:id="sum10" text="Sum10" wrapText="true" GridPane.columnIndex="6" GridPane.rowIndex="6">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Label>
+         <Label fx:id="sum11" text="Sum11" wrapText="true" GridPane.columnIndex="6" GridPane.rowIndex="7">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Label>
+         <Label fx:id="sum12" text="Sum12" wrapText="true" GridPane.columnIndex="6" GridPane.rowIndex="8">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Label>
+         <Label fx:id="sum13" text="Sum13" wrapText="true" GridPane.columnIndex="6" GridPane.rowIndex="9">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Label>
+         <Label fx:id="sum14" text="Sum14" wrapText="true" GridPane.columnIndex="6" GridPane.rowIndex="10">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Label>
+         <Label fx:id="sum15" text="Sum15" wrapText="true" GridPane.columnIndex="6" GridPane.rowIndex="11">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Label>
+         <Label fx:id="sum16" text="Sum16" wrapText="true" GridPane.columnIndex="6" GridPane.rowIndex="12">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Label>
+         <Label fx:id="sum17" text="Sum17" wrapText="true" GridPane.columnIndex="6" GridPane.rowIndex="13">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Label>
+         <Label fx:id="sum18" text="Sum18" wrapText="true" GridPane.columnIndex="6" GridPane.rowIndex="14">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Label>
+         <Label fx:id="sum19" text="Sum19" wrapText="true" GridPane.columnIndex="6" GridPane.rowIndex="15">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Label>
+         <Label fx:id="sum20" text="Sum20" wrapText="true" GridPane.columnIndex="6" GridPane.rowIndex="16">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Label>
+      </children>
+   </GridPane>
+
+                                  <Label fx:id="welcomeText" />
+    <Button alignment="BASELINE_RIGHT" onAction="#onHelloButtonClick" text="Привет">
+      <font>
+         <Font size="14.0" />
+      </font>
+   </Button>
+</VBox>
